@@ -15,7 +15,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import Snackbar from '@/components/snackbar'
+import Snackbar from '@/components/Snackbar'
 
 export default {
   name: 'app',
