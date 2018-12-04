@@ -3,6 +3,21 @@ This is a demo of converting Anonymous firebase user accounts to full accounts, 
 
 
 
+### Anonymous Account Login
+[/src/views/auth/Login.vue#L105](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/views/auth/Login.vue#L105)
+
+### Anonymous Account Convert
+[/src/views/auth/SignUp.vue#L149](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/views/auth/SignUp.vue#L149)
+
+### Other Changes
+There are a few other changes in here outside of the original [vue-firebase](https://github.com/sayhicoelho/vue-firebase) project:
+
+ - Added demo Firebase Project credentials for testing (it's a free account, so you won't be able to be a douche and try and rack up a bill on me)
+ - `userProfile` was added to the vuex store, along with related actions and mutation methods.
+ - [/src/config/firestore.js](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/config/firestore.js) was added to create a user database to set profile values on (to confirm they remain after upgrading anonymous account)
+
+There are also numerous other minor changes added throughout to add support for anonymous account, checking `currentUser`, and so on.  If you want to see all changes, run a diff with this repo against commit `8048d8db59be8e24d11216f1457db226942a08c0` in the [vue-firebase](https://github.com/sayhicoelho/vue-firebase) repo.
+
 # Vue Firebase
 The Vue Firebase is a boilerplate to prevent you from starting a Vue.js & Firebase project from scratch. With that you don't need to worry about some needed features like Authentication, Layout (UI/UX), Environment Variables (DotEnv) and more.
 
@@ -12,7 +27,7 @@ The Vue Firebase is a boilerplate to prevent you from starting a Vue.js & Fireba
 # Setup
 * Run `npm install`
 * Copy the file .env.example to .env
-* Pass your Firebase's configuration within quotations, e.g FIREBASE_API_KEY='"YOUR_API_KEY"'
+* Pass your Firebase's configuration within quotations, e.g FIREBASE_API_KEY='"YOUR_API_KEY"' (you will have to replace the demo ones)
 * Run `npm run dev` to start the Vue application
 
 # License

@@ -43,7 +43,8 @@
 
     <v-dialog v-model="logoutDialog" @keydown.esc="toggleLogoutDialog()" max-width="290">
       <v-card>
-        <v-card-title>Are you sure you want to logout?</v-card-title>
+        <v-card-title v-if="!currentUser.isAnonymous">Are you sure you want to logout?</v-card-title>
+        <v-card-title v-else>Are you sure you want to logout? You probably meant to click Create Account instead to convert your anonymous account!</v-card-title>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn flat="flat" @click="toggleLogoutDialog()">
