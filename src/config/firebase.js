@@ -2,13 +2,15 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
 
+// !! THIS is SPECIFICALLY for demo purposes! YOU should remove this file, 
+// and then rename `firebase.default.js` to `firebase.js` to use in your own project!
 firebase.initializeApp({
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
+  apiKey: "AIzaSyCoyXBD6u0Ysru9Op1ZOZffXlPiZps8WK4",
+  authDomain: "authdemo-vue.firebaseapp.com",
+  databaseURL: "https://authdemo-vue.firebaseio.com",
+  projectId: "authdemo-vue",
+  storageBucket: "authdemo-vue.appspot.com",
+  messagingSenderId: "808683114304"
 });
 
 export default firebase

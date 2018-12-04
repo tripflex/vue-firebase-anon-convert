@@ -1,7 +1,11 @@
 # Vue Firebase Anonymous Accounts
 This is a demo of converting Anonymous firebase user accounts to full accounts, made possible using boilerplate from the awesome [https://github.com/sayhicoelho/vue-firebase](https://github.com/sayhicoelho/vue-firebase)
 
+## Demo
+[https://authdemo-vue.firebaseapp.com](https://authdemo-vue.firebaseapp.com)
 
+## Sandbox Editor
+https://codesandbox.io/s/github/tripflex/vue-firebase-anon-convert
 
 ### Anonymous Account Login
 [/src/views/auth/Login.vue#L105](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/views/auth/Login.vue#L105)
@@ -21,12 +25,10 @@ There are also numerous other minor changes added throughout to add support for 
 # Vue Firebase
 The Vue Firebase is a boilerplate to prevent you from starting a Vue.js & Firebase project from scratch. With that you don't need to worry about some needed features like Authentication, Layout (UI/UX), Environment Variables (DotEnv) and more.
 
-# Demo
-[https://authdemo-vue.firebaseapp.com](https://authdemo-vue.firebaseapp.com)
-
-# Setup
+# Setup (to use in your own project or as boilerplate)
 * Run `npm install`
-* Copy the file .env.example to .env
+* Remove demo firebase project file at [/src/config/firebase.js](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/config/firebase.js) and rename [/src/config/firebase.default.js](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/config/firebase.default.js) to `firebase.js`
+* Copy the file `.env.example` to `.env`
 * Pass your Firebase's configuration within quotations, e.g FIREBASE_API_KEY='"YOUR_API_KEY"' (you will have to replace the demo ones)
 * Run `npm run dev` to start the Vue application
 
