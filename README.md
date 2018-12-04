@@ -7,6 +7,8 @@ This is a demo of converting Anonymous firebase user accounts to full accounts, 
 ## Sandbox Editor
 https://codesandbox.io/s/github/tripflex/vue-firebase-anon-convert
 
+## Changes
+
 ### Anonymous Account Login
 [/src/views/auth/Login.vue#L105](https://github.com/tripflex/vue-firebase-anon-convert/blob/master/src/views/auth/Login.vue#L105)
 
